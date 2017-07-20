@@ -11,7 +11,8 @@ body
 h1
   font-size: 2em
   color: #eee
-  display: inline-block
+  display: block
+  text-align: center
 
 a
   color: white
