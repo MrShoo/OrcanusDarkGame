@@ -6,6 +6,6 @@ enterName.addEventListener("click", greet);
 function greet(){
   var warname = (warInput.value);
   var welcomewarrior = "Greetings";
-  greeting.innerHTML= welcomewarrior + warname + ".";
+  greeting.innerHTML= welcomewarrior + "" + warname + "!";
 });
 
