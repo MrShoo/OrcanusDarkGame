@@ -1,6 +1,5 @@
 
 var warInput=document.getById("war-name");
-var enterName=document.getById("enter-name");
                                
 enterName.addEventListener("click", greet);
 
