@@ -18,8 +18,7 @@ p2 {
     display: block;
 }
 
-div {
-    width: 100px;
+#infobox,
+#infobutton {
     text-align: center;
-    margin-left: 50%;
 }
