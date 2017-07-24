@@ -1,1 +1,34 @@
-testing
+<!DOCTYPE html>
+
+<html>
+
+
+<header>
+    <script src="apps.js" type="text/javascript"></script>
+    <script>
+        function infoSubmission() {
+            var nameId = document.getElementById("name").value;
+            document.getElementById("infobox").style.display = "none";
+            document.getElementById("infobutton").style.display = "none";
+            var itemsToRender = document.getElementById("p3");
+
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title> Orcanus Dark </title>
+</header>
+
+<body>
+    <h1>GAME TITLE PLACEHOLDER </h1>
+    <p1>insert quote here</p1>
+    <div id="infobox" value="hide">
+        <p2>welcome player insert name </p2>
+        <input id='name' type='text'> </input>
+    </div>
+    <div id="infobutton" value="hide">
+        <button onclick="infoSubmission()" value="hide">Enter Name</button>
+    </div>
+    <p3></p3>
+</body>
+
+</html>
