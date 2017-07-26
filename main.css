@@ -22,3 +22,9 @@ p2 {
 #infobutton {
     text-align: center;
 }
+
+#rightpanel {
+    text-align: center;
+    display: block;
+    font-size: 1em;
+}
