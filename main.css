@@ -2,6 +2,12 @@ html {
     height: 100%;
 }
 
+div {
+    display: block;
+    position: relative;
+    padding: 10px;
+}
+
 h1 {
     color: red;
     font-size: 2 em;
@@ -9,22 +15,45 @@ h1 {
     display: block;
 }
 
-p1,
-p2 {
-    font-size: 1 em;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+#quotepanel {
     display: block;
+    text-align: center;
+    display: block;
+    margin: auto;
 }
 
 #infobox,
-#infobutton {
+#infobutton,
+{
     text-align: center;
 }
 
 #rightpanel {
     text-align: center;
-    display: block;
+    display: inline-block;
     font-size: 1em;
+}
+
+#mainpanels {
+    text-align: center;
+    margin: 10px;
+}
+
+#p2 {
+    margin-bottom: 4em;
+}
+
+#intropanel {
+    border: black;
+    border-style: double;
+    background-color: background-image: -webkit-gradient(linear, left top, left bottom, from(ghostwhite), greyolor));
+    background-image: -webkit-linear-gradient(top, ghostwhite, grey);
+    background-image: -moz-linear-gradient(top, ghostwhite, grey);
+    background-image: linear-gradient(to bottom, ghostwhite, grey);
+}
+
+#storypanel,
+{
+    text-align: left;
+    display: block;
 }
