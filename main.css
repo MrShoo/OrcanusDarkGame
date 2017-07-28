@@ -1,59 +1,42 @@
-html {
-    height: 100%;
+#logodiv {
+    background-color: red;
 }
 
-div {
-    display: block;
-    position: relative;
-    padding: 10px;
-}
-
-h1 {
-    color: red;
-    font-size: 2 em;
-    text-align: center;
-    display: block;
-}
-
-#quotepanel {
-    display: block;
-    text-align: center;
-    display: block;
-    margin: auto;
-}
-
-#infobox,
-#infobutton,
-{
+#mainlogo {
     text-align: center;
 }
 
-#rightpanel {
+#openquote {
     text-align: center;
-    display: inline-block;
-    font-size: 1em;
-}
-
-#mainpanels {
-    text-align: center;
-    margin: 10px;
-}
-
-#p2 {
-    margin-bottom: 4em;
+    background-color: green;
 }
 
 #intropanel {
-    border: black;
-    border-style: double;
-    background-color: background-image: -webkit-gradient(linear, left top, left bottom, from(ghostwhite), greyolor));
-    background-image: -webkit-linear-gradient(top, ghostwhite, grey);
-    background-image: -moz-linear-gradient(top, ghostwhite, grey);
-    background-image: linear-gradient(to bottom, ghostwhite, grey);
+    text-align: center;
+    padding: 10px;
 }
 
-#storypanel,
-{
-    text-align: left;
-    display: block;
+#welcomeplayer,
+#inputname,
+#buttonsubmit {
+    padding: 10px;
+}
+
+#storybox {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#happening,
+#choices {
+    text-align: center;
+    padding: 10px;
+}
+
+#listpanel {
+    position: absolute;
+    max-width: 150px;
+    word-wrap: break-word;
 }

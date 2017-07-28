@@ -14,49 +14,35 @@
 <body>
 
     <div id="logodiv">
-        <h1 id="mainlogo">GAME TITLE PLACEHOLDER </h1>
+        <h1 id="mainlogo">GAME TITLE PLACEHOLDER</h1>
     </div>
 
-    <div id="quotepanel" item-width="700px">
-        <p1 id="openquote" stlye="float:center" ; item-width="500px">insert quote here</p1>
+    <div id="quotepanel">
+        <div id="openquote">insert quote here</div>
     </div>
 
-    <div id="mainpanels" width: 700px;>
-        <div id="leftpanel" value="hide" style="float: left" ; width:200px;>
-            <ul style="list-style:none" ;>
-                <li></li>
-            </ul>
-        </div>
 
-        <div id="intropanel" value="hide" style="float:left" ; width:300px;>
-            <div id="welcomeplayer">
-                <p2>welcome player insert name</p2>
-            </div>
-            <div id="inputname">
-                <input id='name' type='text'> </input>
-            </div>
-            <div id="buttonsubmit">
-                <button id="namebutton" onclick="infoSubmission()" value="hide">Enter Name</button>
-            </div>
+    <div id="intropanel" value="hide">
+        <div id="welcomeplayer">welcome player insert name</div>
+        <div id="inputname">
+            <input id='name' type='text'></input>
         </div>
-
-        <div id="storypanel" style="display:none" ; value: 'none' width:300px;>
-            <div id="happening">the button revealed this?</div>
-            <div id="choices">there will be new buttons choices here</div>
-        </div>
-
-        <div id="rightpanel" style="float:right" ; width:200px;>
-            <table id=itemtable>
-                <tr>
-                    <th>item</th>
-                    <th>quantity</th>
-                </tr>
-                <tr>
-                    <td>gold</td>
-                    <td>100</td>
-                </tr>
+        <div id="buttonsubmit">
+            <button id="namebutton" onclick="infoSubmission()" type="submit" value="hide">Enter Name</button>
         </div>
     </div>
+
+    <div id="storybox">
+        <div id="happening" style="display: none">the button revealed this</div>
+        <div id="choices" style="display: none">there will be new buttons choices here</div>
+
+    </div>
+    <div id="listpanel" value="hide">
+        <ul id="list" style="list-style:none;">
+            <li></li>
+        </ul>
+    </div>
+
 
     <script src="apps.js" type="text/javascript"></script>
     <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
@@ -64,10 +50,11 @@
     <script>
         function infoSubmission() {
             document.getElementById("intropanel").style.display = "none";
-            document.getElementById("storypanel").style.display = "";
+            document.getElementById("happening").style.display = "";
+            document.getElementById("choices").style.display = "";
+            document.getElementById("list").style.display = "";
             var value = $('#name').val();
-            alert("Greetings" + " " + value + " " + "!");
-            $('ul').append('<li>' + "Greetings" + " " + value + " " + "!" + '</li>');
+            $('li').append('<li>' + "Greetings" + " " + value + " " + "!" + '</li>');
         }
     </script>
 
