@@ -37,22 +37,41 @@ body {
 }
 
 #storybox {
-    position: absolute;
-    left: 0;
-    right: 0;
+    float: center;
+    text-align: center;
     margin: 0 auto;
+    width: 100%;
 }
 
 #happening,
 #choices {
     text-align: center;
     padding: 10px;
+    float: center;
+    display: block;
+    margin: auto;
+}
+
+#list {
+    position: absolute;
+    display: block;
+    float: right;
+    margin: auto;
 }
 
 #listpanel {
-    position: absolute;
     max-width: 150px;
     word-wrap: break-word;
+    position: relative;
+    float: left;
+}
+
+#happening {
+    display: block;
+    float: center;
+    text-align: center;
+    word-wrap: break-word;
+    max-width: 600px;
 }
 
 #choices {
