@@ -1,24 +1,74 @@
-html {
-    height: 100%;
+html,
+body {
+    width: 100%;
+    margin: 0;
+    font-family: 'Artifika', serif;
 }
 
-h1 {
-    color: red;
-    font-size: 2 em;
-    text-align: center;
+body {
+    max-width: 100%;
+}
+
+#mainlogo {
     display: block;
+    margin: auto;
+    max-width: 250px;
 }
 
-p1,
-p2 {
-    font-size: 1 em;
+#quotepanel {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: aqua;
+    border: 2px solid black;
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+#openquote {}
+
+#intropanel {
+    text-align: center;
+    padding: 10px;
+}
+
+#welcomeplayer,
+#inputname,
+#buttonsubmit {
+    padding: 10px;
+}
+
+#storybox {
+    float: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#happening,
+#choices {
+    text-align: center;
+    padding: 10px;
+    float: center;
     display: block;
+    margin: auto;
 }
 
-#infobox,
-#infobutton {
+#list {
+    position: absolute;
+    display: block;
+    float: right;
+    margin: auto;
+    padding: 10px;
+}
+
+#happening {
+    display: block;
+    float: center;
     text-align: center;
+    word-wrap: break-word;
+    max-width: 800px;
+}
+
+#choices {
+    display: block;
+    float: center;
 }
